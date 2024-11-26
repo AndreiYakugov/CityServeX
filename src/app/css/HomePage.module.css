@@ -1,0 +1,167 @@
+@font-face {
+  font-family: 'Rimouski-Font';
+  src: url('/fonts/rimouski-sb.ttf') format('ttf');
+}
+@font-face {
+  font-family: 'Lato-Font';
+  src: url('/fonts/Lato-Black.ttf') format('ttf');
+}
+.container {
+    padding: 0 50px;
+}
+.footer {
+  background-image: url('/images/footer_bg.png');
+  background-size: 100% auto;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  height: 398px;
+}
+.cityWindow {
+  margin-top: 30px;
+}
+.contents {
+  padding: 50px 80px;
+  text-align: center;
+}
+.header2 {
+  font-family: 'Rimouski-Font', sans-serif;
+  font-size: 60px;
+  color: #77A5F9;
+  font-weight: 600;
+  margin:0;
+  text-align: left;
+}
+.contents h2 {
+  text-align: center;
+}
+.info {
+  font-family: 'Lato-Font', sans-serif;
+  font-size: 20px;
+  color: black;
+  line-height: 24px;
+  text-align: left;
+}
+.cardContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns */
+  gap: 1.5rem;
+}
+
+.card {
+  text-align: center;
+}
+
+.cardDescription {
+  font-family: 'Rimouski-Font', sans-serif;
+  font-size: 30px;
+  color: #77A5F9;
+  text-align: center;
+  line-height: 36px;
+  font-weight: 600;
+  width: 60%;
+  margin: 30px auto;
+}
+.cardButton {
+    transition: transform 0.2s ease;
+}
+.cardButton:hover {
+    transform: scale(1.1);
+}
+.infoDescContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  padding: 50px 80px;
+}
+.infoItem {
+  padding: 1rem;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
+.info_button {
+  transition: transform 0.2s ease;
+}
+.info_button:hover {
+  transform: scale(1.1);
+}
+.imgSection {
+  margin: 0 auto;
+  text-align: center;
+  width: 60%;
+  margin-top: 30px;
+}
+.imgSection h2 {
+  text-align: center;
+}
+
+/* Container for the grid */
+.gridContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /* Space between cards */
+  padding: 16px;
+  margin: 0 auto; /* Center the list horizontally */
+}
+
+/* Card styling */
+.card2 {
+  display: flex;
+  justify-content: space-between; /* Title/Description on the left, number on the right */
+  align-items: center;
+  border: 1px solid #000; /* Light gray border */
+  border-radius: 30px; /* Rounded corners */
+  padding: 16px;/* Subtle shadow */
+}
+.text {
+  flex: 1; /* Take up available space */
+  margin-right: 16px; /* Space between text and number */
+}
+/* Title styling */
+.title {
+  font-family: 'Lato-Font', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: black;
+  line-height: 24px;
+  text-align: left;
+  margin: 0;
+}
+
+/* Description styling */
+.description {
+  font-family: 'Lato-Font', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: black;
+  line-height: 24px;
+  text-align: left;
+  margin: 0;
+}
+.number {
+  text-align: right; /* Align to the right */
+  min-width: 50px; /* Ensure consistent width for the number column */
+}
+
+
+@media (max-width: 1024px) {
+  .cardContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .cardContainer {
+    grid-template-columns: 1fr;
+  }
+  .cardDescription {
+    width: 90%;
+  }
+  .infoDescContainer {
+    grid-template-columns: 1fr;
+    padding: 10px 30px;
+  }
+  .imgSection, .infoItem {
+    width: 100%;
+  }
+}

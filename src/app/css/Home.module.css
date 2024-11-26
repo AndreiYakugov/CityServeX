@@ -1,0 +1,44 @@
+@font-face {
+  font-family: 'Lato-Font';
+  src: url('/fonts/Lato-Black.ttf') format('ttf');
+}
+.background {
+    background-image: url('/images/home_bg.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+.home_logo {
+  display: flex;
+  justify-content: center;
+  padding-top: 86px;
+}
+.home_title {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+.home_info {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+.info {
+  font-family: 'Lato-Font', sans-serif;
+  font-size: 20px;
+  color: black;
+  line-height: 24px;
+  text-align: center;
+  font-weight: 400;
+}
+.home_enter_button {
+  display: flex;
+  justify-content: center;
+  padding-top: 169px;
+}
+.enter_button {
+  transition: transform 0.2s ease;
+}
+.enter_button:hover {
+  transform: scale(1.1);
+}

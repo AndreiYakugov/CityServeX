@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'Rimouski-Font';
+    src: url('/fonts/rimouski-sb.ttf') format('ttf');
+}
+@font-face {
+    font-family: 'Lato-Font';
+    src: url('/fonts/Lato-Black.ttf') format('ttf');
+}
+.container {
+    padding: 0 50px;
+}
+.childContainer {
+    width: 60%;
+    margin: 0 auto;
+}
+.footer {
+    background-image: url('/images/footer_bg.png');
+    background-size: 100% auto;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    height: 398px;
+}
+.header2 {
+    font-family: 'Rimouski-Font', sans-serif;
+    font-size: 60px;
+    color: #77A5F9;
+    font-weight: 600;
+    text-align: center;
+    line-height: 72px;
+}
+.title {
+    font-family: 'Lato-Font', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38.4px;
+    text-align: center;
+}
+.spanTitle {
+    font-family: 'Rimouski-Font', sans-serif;
+    font-size: 32px;
+    color: #C3A2CD;
+    font-weight: 600;
+    line-height: 38.4px;
+    text-align: center;
+}
+.text {
+    font-family: 'Lato-Font', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+}
+.detailImage {
+    margin: 50px auto;
+    text-align: center;
+}
+.infoDescContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+@media (max-width: 768px) {
+    .infoDescContainer {
+      grid-template-columns: 1fr;
+      padding: 10px 30px;
+    }
+    .childContainer {
+        width: 100%;
+    }
+    .childContainer img {
+        width: 100%;
+        height: 100%;
+    }
+  }

@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Rimouski-Font';
+    src: url('/fonts/rimouski-sb.ttf') format('ttf');
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 32px;
+    border-bottom: 1px solid #ddd;
+    border-radius: 0 0 60px 60px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.menuItem {
+    margin-left: 40px;
+}
+.menuItem a {
+    text-decoration: none;
+}
+.itemText {
+    font-family: 'Rimouski-Font', sans-serif;
+    font-size: 30px;
+    color: black;
+    line-height: 36px;
+    text-align: center;
+    font-weight: 600;
+}
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+}

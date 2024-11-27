@@ -50,6 +50,7 @@ export default function Landscape() {
           width: 100%;
           height: 100%;
           object-fit: cover;
+          border-radius: 40px;
         }
         .indicator {
           position: absolute;

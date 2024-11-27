@@ -6,7 +6,7 @@ const NavBar = () => {
   return (
     <nav className={styles.nav}>
       <div>
-        <Link href="/">
+        <Link href="/pages/homepage">
         <Image
           src="/images/homepage_logo.png"
           alt="Logo"

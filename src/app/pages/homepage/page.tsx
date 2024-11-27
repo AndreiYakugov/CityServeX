@@ -2,6 +2,7 @@ import styles from '../../css/HomePage.module.css';
 import NavBar from '../../components/NavBar';
 import Image from "next/image";
 import Link from 'next/link';
+import Landscape from '../../components/Landscape';
 
 export default function HomePage() {
   const learnCards = [
@@ -20,13 +21,7 @@ export default function HomePage() {
         <div className={styles.container}>
           <NavBar />
           <div className={styles.cityWindow}>
-            <Image
-              src="/images/City Window.png"
-              alt="City Window"
-              width={1820}
-              height={910}
-              style={{ width: '100%', height: 'auto' }}
-            />
+          <Landscape />
           </div>
           <div className={styles.contents}>
             <h2 className={styles.header2}>
